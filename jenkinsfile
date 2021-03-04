@@ -1,12 +1,15 @@
 node {
-    stage('Build'){
+    stage('build'){
         echo 'Building file'
     }
-    stage('Test'){
+    stage('test'){
         echo 'Testing file'
     }
-    stage('Deploy'){
+    stage('deploy'){
         echo 'Deploying file'
-    }        
+    }
+    stage('final'){
+        echo 'final file version 1.0'
+    }     
 }
 
