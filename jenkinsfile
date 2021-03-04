@@ -1,7 +1,11 @@
 node {
+    stage('git-pull'){
+        echo 'pulling required branch'
+        git branch : '${branch}', url: 'https://github.com/balasm01/jenkinsbuild.git'
+    }
     stage('build'){
         echo 'Building file'
-        sh 'dotnet --version'
+        sh 'java -version'
     }
     stage('test'){
         echo 'Testing file'
